@@ -36,7 +36,7 @@ const Navbar = () => {
                     {/* Desktop Buttons */}
                     <div className="hidden lg:flex justify-center space-x-6 items-center">
                         <Search className="text-green-600 cursor-pointer" size={25} />
-                        <a href="#" className="py-2 px-3 border rounded-full bg-green-600 text-white font-semibold text-base">
+                        <a href="#" className="py-2 px-3 border rounded-full bg-green-600 text-white font-semibold text-base  hover:bg-green-700">
                             Book an Appointment
                         </a>
                     </div>
