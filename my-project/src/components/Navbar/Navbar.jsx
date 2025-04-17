@@ -61,7 +61,7 @@ const Navbar = () => {
                         </ul>
 
                         <div className="mt-4">
-                            <a href="#" className="py-2 px-4 border rounded-md bg-green-600 text-white text-base">
+                            <a href="#" className="py-2 px-4 border rounded-md bg-green-600 text-white text-base  hover:bg-green-700">
                                 Book an Appointment
                             </a>
                         </div>
