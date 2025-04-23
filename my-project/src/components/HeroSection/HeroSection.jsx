@@ -20,12 +20,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <div className="text-center md:text-left order-2 md:order-1 z-10">
-            <h3 className="text-2xl text-green-800 leading-tight font-semibold tracking-widest mb-2">
+            <h3 className="text-2xl text-green-600 leading-tight font-semibold tracking-widest mb-2">
               CARING FOR LIFE 
             </h3>
             <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-4">
               Leading the way <br/>
-              in <span className="text-green-600">Medical Excellence</span>
+              in <span className="text-green-900">Medical Excellence</span>
             </h1>
             
             {/* Services Button */}

@@ -6,10 +6,10 @@ const Content = () => {
     <div className="bg-white w-full overflow-hidden">
       {/* Text Content Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex flex-col items-center">
-        <h3 className="text-xl md:text-2xl font-semibold text-green-600 text-center">
-          Welcome to Aigbogun Hospital
+        <h3 className="text-2xl md:text-3xl font-semibold text-green-600 text-center tracking-widest">
+          WELCOME TO AIGBOGUN HOSPITAL
         </h3>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 text-center text-gray-800">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 text-center text-green-900 leading-tight">
           A Great Place to Receive Care
         </h1>
         <p className="mt-4 md:mt-6 text-gray-600 max-w-2xl text-center text-base md:text-lg">
@@ -24,7 +24,7 @@ const Content = () => {
       </div>
 
       {/* Full Width Image Container */}
-      <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+      <div className="w-full relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div className="relative">
           <img 
             className="w-full h-auto object-cover max-h-[500px] md:max-h-[600px]"
@@ -32,10 +32,6 @@ const Content = () => {
             alt="Medical team at Aigbogun Hospital"
           />
         </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-       
       </div>
     </div>
   );
