@@ -1,5 +1,5 @@
 import DefaultLayout from "../Layout/DefaultLayout";
-import CardImage3 from "../assets/CardImage3.png";
+import CardImage3 from "../assets/Cardimage3.png";
 import DocImage1 from "../assets/Doc-img-2.png";
 import DocImage2 from "../assets/Doc-img-3.png";
 import DocImage3 from "../assets/Doc-img-4.png";
