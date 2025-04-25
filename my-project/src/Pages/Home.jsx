@@ -1,16 +1,203 @@
-import React from 'react';
+import { ArrowRight } from 'lucide-react';
 import { CalendarDays, Clock, User, Mail, Stethoscope, MessageSquare } from 'lucide-react';
-import BookAppointmentimg from "../../assets/BookAppointmentimg.png";
-
-const BookAppointment = () => {
-  const handleSubmit = (e) => {
+import DefaultLayout from "../Layout/DefaultLayout"
+import heroBackground from "../assets/Backgroundimg.svg";
+import heroImage from "../assets/Doc-img.png";
+import DocImg from "../assets/Doc-img-2.png";
+import DoctorImage from '../assets/Blackdoctors.png';
+import cardImage1 from "../assets/Cardimage1.png";
+import cardImage2 from "../assets/Cardimage2.png";
+import cardImage3 from "../assets/Cardimage3.png";
+import BookAppointmentimg from "../assets/BookAppointmentimg.png";
+import React from 'react';
+const Home = () => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
     alert('Appointment booked successfully!');
   };
 
+    const services = [
+    {
+      id: 1,
+      title: "Cardiogram",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      image: cardImage1,
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "DNA Testing",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      image: cardImage2,
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Free Checkup",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      image: cardImage3,
+      link: "#"
+    }
+  ];
+
   return (
-    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
+   <DefaultLayout>
+       <section className="relative bg-green-50 overflow-hidden">
+       
+             {/* Background Image with Overlay */}
+             <div className="absolute inset-0 z-0">
+               <img
+                 src={heroBackground}
+                 alt="Healthcare background texture"
+                 className="w-full h-full object-cover opacity-10" 
+               />
+               <div className="absolute inset-0 bg-gradient-to-r from-green-50/80 to-green-100/30"></div>
+             </div>
+       
+             {/* Content Container */}
+             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                 {/* Text Content */}
+                 <div className="text-center md:text-left order-2 md:order-1 z-10">
+                   <h3 className="text-2xl text-green-600 leading-tight font-semibold tracking-widest mb-2">
+                     CARING FOR LIFE 
+                   </h3>
+                   <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-4">
+                     Leading the way <br/>
+                     in <span className="text-green-900">Medical Excellence</span>
+                   </h1>
+                   
+                   {/* Services Button */}
+                   <div className="mt-6 flex justify-center md:justify-start">
+                     <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full flex items-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-200">
+                       Our Services
+                     </button>
+                   </div>
+                 </div>
+       
+                 {/* Image Content - Enhanced */}
+                 <div className="flex justify-center order-1 md:order-2 relative">
+                   <div className="relative">
+                     <img 
+                       className="w-full max-w-md md:max-w-lg h-auto  shadow-sm transform transition-all duration-500 hover:scale-105" 
+                       src={heroImage} 
+                       alt="Professional Doctor" 
+                     />   
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </section>
+
+     {/* Content Section */}
+     <section>
+        <div className="bg-white w-full overflow-hidden">
+      {/* Text Content Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex flex-col items-center">
+        <h3 className="text-2xl md:text-3xl font-semibold text-green-600 text-center tracking-widest">
+          WELCOME TO AIGBOGUN HOSPITAL
+        </h3>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 text-center text-green-900 leading-tight">
+          A Great Place to Receive Care
+        </h1>
+        <p className="mt-4 md:mt-6 text-gray-600 max-w-2xl text-center text-base md:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus odit nobis ullam, tenetur, aliquid nam hic laudantium maiores illo minus eos incidunt dolor doloribus sit fugiat aut vero qui!
+        </p>
+        <p className="mt-6 md:mt-8">
+          <a href="#" className="flex items-center text-green-600 hover:text-green-800 font-medium transition-colors duration-300 group">
+            Learn More 
+            <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" size={18} />
+          </a>
+        </p>
+      </div>
+
+      {/* Full Width Image Container */}
+      <div className="w-full relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div className="relative">
+          <img 
+            className="w-full h-auto object-cover max-h-[500px] md:max-h-[600px]"
+            src={DoctorImage} 
+            alt="Medical team at Aigbogun Hospital"
+          />
+        </div>
+      </div>
+    </div>
+    </section>
+
+     {/* About Us Section */}
+    <section>
+        <div className=" py-12 px-4 sm:px-6 lg:px-8 mt-12" >
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        {/* Smaller square image container */}
+        <div className="md:w-1/3 aspect-square overflow-hidden rounded-lg shadow-lg max-w-md">
+          <img 
+            src={DocImg} 
+            alt="Medical professionals" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Content section - now takes more space (2/3) */}
+        <div className="md:w-2/3 space-y-4">
+            <h4 className="text-green-600 font-semibold text-lg">OUR PROFESSIONALS</h4>
+             <h1 className="text-3xl font-bold text-gray-800">We have highly trained team</h1>
+            <p className="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, debitis quidem architecto dicta unde illum nesciunt ut porro quo, consectetur recusandae similique. Modi temporibus perspiciatis quisquam, ducimus beatae aspernatur exercitationem!
+            </p>
+            <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                Meet Our Team
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    {/* Service Section */}
+    <section className="bg-green-50 mt-12 py-12">
+      <div className="container mx-auto px-4">
+        {/* Our Services Heading */}
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-green-900">
+          Our Services
+        </h1>
+        
+        <div className="flex flex-wrap justify-center gap-8">
+          {services.map((service) => (
+            <div 
+              key={service.id} 
+              className="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white"
+            >
+              <img 
+                src={service.image} 
+                alt={service.title} 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <a 
+                  href={service.link} 
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Read more <ArrowRight className="ml-2" size={16} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Load More Button */}
+        <div className="flex justify-center mt-10">
+          <button className="h-[60px] w-[200px] px-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-300 ">
+            Load More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    {/* Appointment Section */}
+
+    <section>
+        <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
       {/* Background image with proper positioning */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
@@ -217,7 +404,11 @@ const BookAppointment = () => {
         </form>
       </div>
     </div>
-  );
-};
+    </section>
 
-export default BookAppointment;
+
+   </DefaultLayout>
+  )
+}
+
+export default Home
