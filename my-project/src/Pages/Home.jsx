@@ -137,7 +137,7 @@ const Home = () => {
           />
         </div>
 
-        {/* Content section */}
+        {/* Content section - now takes more space (2/3) */}
         <div className="md:w-2/3 space-y-4">
             <h4 className="text-green-600 font-semibold text-lg">OUR PROFESSIONALS</h4>
              <h1 className="text-3xl font-bold text-gray-800">We have highly trained team</h1>
@@ -154,7 +154,7 @@ const Home = () => {
 
     {/* Service Section */}
     <section className="bg-green-50 mt-12 py-12">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-2">
         {/* Our Services Heading */}
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-green-900">
           Our Services
@@ -196,7 +196,7 @@ const Home = () => {
     {/* Appointment Section */}
 
     <section>
-        <div className="min-h-screen py-16 px-12 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
+        <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
       {/* Background image with proper positioning */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 
