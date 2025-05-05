@@ -177,13 +177,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                 </ul>
-
-                <div className="mt-4 flex flex-col items-center space-y-4">
-                  <Search
-                    className="text-green-600 cursor-pointer"
-                    size={25}
-                    onClick={toggleSearch}
-                  />
+ 
                   <Link
                     to="/book-appointment"
                     className="py-2 px-4 border rounded-full bg-green-600 text-white text-base hover:bg-green-700"
@@ -191,7 +185,7 @@ const Navbar = () => {
                   >
                     Book an Appointment
                   </Link>
-                </div>
+      
               </>
             )}
           </div>

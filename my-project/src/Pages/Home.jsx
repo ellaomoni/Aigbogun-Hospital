@@ -160,7 +160,7 @@ const Home = () => {
           Our Services
         </h1>
         
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-3">
           {services.map((service) => (
             <div 
               key={service.id} 
