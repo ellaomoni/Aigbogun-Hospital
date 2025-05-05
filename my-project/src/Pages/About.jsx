@@ -1,10 +1,10 @@
 import DefaultLayout from "../Layout/DefaultLayout";
-import CardImage3 from "../assets/Cardimage3.png";
-import DocImage1 from "../assets/Doc-img-2.png";
-import DocImage2 from "../assets/Doc-img-3.png";
-import DocImage3 from "../assets/Doc-img-4.png";
-import BackgroundImage from "../assets/Blackdoctors.png";
-import HistoryImage from "../assets/Doc-img-2.png"; // Assuming we'll use the same image or you can import a new one
+import CardImage3 from "../assets/Cardimage3.webp";
+import DocImage1 from "../assets/Doc-img-2.webp";
+import DocImage2 from "../assets/Doc-img-3.webp";
+import DocImage3 from "../assets/Doc-img-4.webp";
+import BackgroundImage from "../assets/Blackdoctors.webp";
+import HistoryImage from "../assets/Doc-img-2.webp"; // Assuming we'll use the same image or you can import a new one
 import { Instagram, Twitter, Facebook, Linkedin, Quote } from 'lucide-react';
 
 const About = () => {

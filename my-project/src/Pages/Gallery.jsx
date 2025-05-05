@@ -1,10 +1,10 @@
-import BackGroundImage from "../assets/Gallery-Background.png";
-import Image1 from "../assets/Gallery-img-1.png";
-import Image2 from "../assets/Gallery-img-3.png";
-import Image3 from "../assets/Gallery-img-1.png";
-import Image4 from "../assets/Gallery-img-3.png";
-import Image5 from "../assets/Gallery-img-1.png";
-import Image6 from "../assets/Gallery-img-1.png";
+import BackGroundImage from "../assets/Gallery-Background.webp";
+import Image1 from "../assets/Gallery-img-1.webp";
+import Image2 from "../assets/Gallery-img-3.webp";
+import Image3 from "../assets/Gallery-img-1.webp";
+import Image4 from "../assets/Gallery-img-3.webp";
+import Image5 from "../assets/Gallery-img-1.webp";
+import Image6 from "../assets/Gallery-img-1.webp";
 import DefaultLayout from "../Layout/DefaultLayout";
 const Gallery = () => {
   return (

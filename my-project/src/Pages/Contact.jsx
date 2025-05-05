@@ -1,5 +1,5 @@
 import DefaultLayout from "../Layout/DefaultLayout";
-import BackgroundImage from "../assets/ContactFormImage.png";
+import BackgroundImage from "../assets/ContactFormImage.webp";
 import { useState } from "react";
 import { Phone, MapPin, Mail, Clock, Send } from 'lucide-react';
 

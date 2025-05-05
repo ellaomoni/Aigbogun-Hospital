@@ -2,13 +2,13 @@ import { ArrowRight } from 'lucide-react';
 import { CalendarDays, Clock, User, Mail, Stethoscope, MessageSquare } from 'lucide-react';
 import DefaultLayout from "../Layout/DefaultLayout"
 import heroBackground from "../assets/Backgroundimg.svg";
-import heroImage from "../assets/Doc-img.png";
-import DocImg from "../assets/Doc-img-2.png";
-import DoctorImage from '../assets/Blackdoctors.png';
-import cardImage1 from "../assets/Cardimage1.png";
-import cardImage2 from "../assets/Cardimage2.png";
-import cardImage3 from "../assets/Cardimage3.png";
-import BookAppointmentimg from "../assets/BookAppointmentimg.png";
+import heroImage from "../assets/Doc-img.webp";
+import DocImg from "../assets/Doc-img-2.webp";
+import DoctorImage from '../assets/Blackdoctors.webp';
+import cardImage1 from "../assets/Cardimage1.webp";
+import cardImage2 from "../assets/Cardimage2.webp";
+import cardImage3 from "../assets/Cardimage3.webp";
+import BookAppointmentimg from "../assets/BookAppointmentimg.webp";
 import React from 'react';
 const Home = () => {
     const handleSubmit = (e) => {

@@ -1,11 +1,11 @@
 import DefaultLayout from "../Layout/DefaultLayout";
-import BackgroundImage from "../assets/Cardimage1.png";
-import CardiologyImg from "../assets/Cardimage1.png";
-import NeurologyImg from "../assets/Cardimage1.png";
-import PediatricsImg from "../assets/Cardimage1.png";
-import OrthopedicsImg from "../assets/Cardimage1.png";
-import OncologyImg from "../assets/Cardimage1.png";
-import EmergencyImg from "../assets/Cardimage1.png";
+import BackgroundImage from "../assets/Cardimage1.webp";
+import CardiologyImg from "../assets/Cardimage1.webp";
+import NeurologyImg from "../assets/Cardimage1.webp";
+import PediatricsImg from "../assets/Cardimage1.webp";
+import OrthopedicsImg from "../assets/Cardimage1.webp";
+import OncologyImg from "../assets/Cardimage1.webp";
+import EmergencyImg from "../assets/Cardimage1.webp";
 
 const departments = [
   {

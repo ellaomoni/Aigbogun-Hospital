@@ -1,4 +1,4 @@
-import Image from "../assets/Book-2.png";
+import Image from "../assets/Book-2.webp";
 import DefaultLayout from "../Layout/DefaultLayout";
 import { CalendarDays, Clock, User, Mail, Stethoscope, MessageSquare, Phone } from 'lucide-react';
 
