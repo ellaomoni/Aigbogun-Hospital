@@ -15,9 +15,8 @@ const Footer = () => {
               <img 
                 src= {Logo}
                 alt="Hospital Logo" 
-                className="h-12 w-12 mr-2"
+                className="h-10 w-30 mr-2"
               />
-              <h2 className="text-xl font-bold text-green-600">Aigbogun Hospital</h2>
             </div>
             <p className="text-gray-600 mb-4">
               Providing quality healthcare services.
@@ -42,11 +41,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-green-600 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-blue-600">Home</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-600">Services</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-600">Doctors</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-600">Appointments</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-600">About Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-green-600">Home</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-green-600">Services</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-green-600">Doctors</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-green-600">Appointments</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-green-600">About Us</a></li>
             </ul>
           </div>
 

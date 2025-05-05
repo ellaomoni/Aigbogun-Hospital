@@ -43,10 +43,9 @@ const Home = () => {
 
   return (
    <DefaultLayout>
-       <section className="relative bg-green-50 overflow-hidden">
-       
+       <section className="relative bg-green-50 overflow-hidden ">
              {/* Background Image with Overlay */}
-             <div className="absolute inset-0 z-0">
+             <div className="absolute inset-0 z-0 ">
                <img
                  src={heroBackground}
                  alt="Healthcare background texture"
@@ -56,7 +55,7 @@ const Home = () => {
              </div>
        
              {/* Content Container */}
-             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+             <div className="max-w-7xl mx-auto px-0.5 sm:px-6 lg:px-8 py-6 md:p-0.5">
                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                  {/* Text Content */}
                  <div className="text-center md:text-left order-2 md:order-1 z-10">
@@ -80,7 +79,7 @@ const Home = () => {
                  <div className="flex justify-center order-1 md:order-2 relative">
                    <div className="relative">
                      <img 
-                       className="w-full max-w-md md:max-w-lg h-auto  shadow-sm transform transition-all duration-500 hover:scale-105" 
+                       className="w-full max-w-md md:max-w-lg h-full shadow-sm" 
                        src={heroImage} 
                        alt="Professional Doctor" 
                      />   
@@ -138,7 +137,7 @@ const Home = () => {
           />
         </div>
 
-        {/* Content section - now takes more space (2/3) */}
+        {/* Content section */}
         <div className="md:w-2/3 space-y-4">
             <h4 className="text-green-600 font-semibold text-lg">OUR PROFESSIONALS</h4>
              <h1 className="text-3xl font-bold text-gray-800">We have highly trained team</h1>
@@ -155,7 +154,7 @@ const Home = () => {
 
     {/* Service Section */}
     <section className="bg-green-50 mt-12 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-12">
         {/* Our Services Heading */}
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-green-900">
           Our Services
@@ -197,7 +196,7 @@ const Home = () => {
     {/* Appointment Section */}
 
     <section>
-        <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
+        <div className="min-h-screen py-16 px-12 sm:px-6 lg:px-8 text-gray-700 relative overflow-hidden mt-12">
       {/* Background image with proper positioning */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img 

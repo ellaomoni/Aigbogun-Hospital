@@ -4,6 +4,7 @@ import DocImage1 from "../assets/Doc-img-2.png";
 import DocImage2 from "../assets/Doc-img-3.png";
 import DocImage3 from "../assets/Doc-img-4.png";
 import BackgroundImage from "../assets/Blackdoctors.png";
+import HistoryImage from "../assets/Doc-img-2.png"; // Assuming we'll use the same image or you can import a new one
 import { Instagram, Twitter, Facebook, Linkedin, Quote } from 'lucide-react';
 
 const About = () => {
@@ -61,8 +62,38 @@ const About = () => {
         <h1 className="text-5xl font-bold text-white relative z-10">About Us</h1>
       </div>
 
+      {/* History Section */}
+      <div className="container mx-auto px-12 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+      <h1 className="text-4xl font-bold mb-6 text-green-600">Our History</h1>
+      <p className="text-gray-700 mb-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores minus fugit! Dolore doloribus quibusdam,
+        necessitatibus numquam tenetur deleniti voluptatibus suscipit aspernatur non veritatis
+        reiciendis! Repudiandae harum incidunt atque quibusdam.</p>
+      <p className="text-gray-700 mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati neque eveniet quo, quae, 
+        aspernatur doloribus voluptas ullam dolor itaque accusamus voluptatem nulla nesciunt, 
+        minus nemo molestias deleniti asperiores recusandae expedita.
+      </p>
+      <p className="text-gray-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores quam exercitationem dolor 
+        maxime neque perspiciatis saepe? Culpa similique aliquid sint nemo blanditiis, facilis doloribus cupiditate hic modi amet impedit.</p>
+    </div>
+    <div className="flex justify-center">
+      <img 
+        src={HistoryImage} 
+        alt="Hospital history" 
+        className="w-full h-auto rounded-lg "
+      />
+    </div>
+  </div>
+</div>
+
+      {/* Description Section */}
+     
       {/* Image and List Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <img 
@@ -114,7 +145,7 @@ const About = () => {
       </div>
 
       {/* Doctors Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-12 py-16">
         <h2 className="text-3xl font-semibold text-center mb-12 text-green-600">Meet Our Doctors</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {doctors.map((doctor) => (
