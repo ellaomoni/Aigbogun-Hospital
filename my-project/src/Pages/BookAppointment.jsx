@@ -13,7 +13,7 @@ const BookAppointment = () => {
     <DefaultLayout>
       {/* Hero Section with Background Image */}
       <div 
-        className="relative h-96 flex items-center justify-center"
+        className="relative h-64 md:h-96 flex items-center justify-center px-4"
         style={{
           backgroundImage: `url(${Image})`,
           backgroundSize: 'cover',
@@ -21,27 +21,27 @@ const BookAppointment = () => {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <h1 className="text-5xl font-bold text-white relative z-10">Book Appointment</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-white relative z-10 text-center">Book Appointment</h1>
       </div>
 
-      <section className="py-12">
+      <section className="py-8 md:py-12 px-4">
         {/* Content container with relative positioning */}
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 relative z-10">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 md:gap-10 relative z-10">
           {/* Left column with heading, paragraph, and form */}
           <div className="lg:w-2/3 flex flex-col">
-            <div className="mb-8">
-              <h2 className="text-4xl font-bold mb-6 text-green-600">Book an Appointment</h2>
-              <p className="text-lg">
+            <div className="mb-6 md:mb-8">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-green-600">Book an Appointment</h2>
+              <p className="text-base md:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis beatae repellat tempora, labore, aspernatur accusantium necessitatibus in repudiandae ad nesciunt maiores commodi! At molestias voluptatem ducimus, veritatis nobis velit.
               </p>
             </div>
 
             <form 
               onSubmit={handleSubmit} 
-              className="bg-white rounded-lg shadow-lg p-8 text-gray-800"
+              className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-gray-800"
             >
               {/* Form content remains the same */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Full Name
@@ -207,9 +207,9 @@ const BookAppointment = () => {
           </div>
 
           {/* Right column with schedule and emergency number */}
-          <div className="lg:w-1/3 bg-white rounded-lg shadow-lg p-8 h-fit sticky top-8">
-            <h3 className="text-2xl font-bold mb-6 text-green-600">Scheduled Hours</h3>
-            <div className="space-y-4 mb-8">
+          <div className="lg:w-1/3 bg-white rounded-lg shadow-lg p-6 md:p-8 h-fit sticky top-8">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-green-600">Scheduled Hours</h3>
+            <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div className="flex justify-between">
                 <span className="font-medium">Monday - Friday</span>
                 <span>8:00 AM - 5:00 PM</span>
@@ -225,25 +225,23 @@ const BookAppointment = () => {
             </div>
             
             <div className="bg-red-50 p-4 rounded-lg">
-              <h4 className="text-lg font-bold mb-2 text-red-600">Emergency Contact</h4>
+              <h4 className="text-base md:text-lg font-bold mb-2 text-red-600">Emergency Contact</h4>
               <div className="flex items-center">
                 <Phone className="text-red-600 mr-2 h-5 w-5" />
-                <span className="font-medium text-lg">911</span>
+                <span className="font-medium text-base md:text-lg">911</span>
               </div>
-              <p className="text-sm text-gray-600 mt-1">Available 24/7 for emergencies</p>
+              <p className="text-xs md:text-sm text-gray-600 mt-1">Available 24/7 for emergencies</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-8 md:py-12 bg-gray-50 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center text-green-600">Our Location</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center text-green-600">Our Location</h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
-            {/* Replace with your actual map embed code */}
-            <div className="h-full">
-            <div className="h-96 w-full bg-gray-200 rounded-lg overflow-hidden">
+            <div className="h-64 md:h-96 w-full bg-gray-200 rounded-lg overflow-hidden">
               <iframe
                 title="Hospital Location"
                 width="100%"
@@ -256,7 +254,6 @@ const BookAppointment = () => {
               >
               </iframe>
             </div>
-          </div>
           </div>
         </div>
       </section>
