@@ -62,10 +62,10 @@ const Home = () => {
                    <h3 className="text-2xl text-green-600 leading-tight font-semibold tracking-widest mb-2">
                      CARING FOR LIFE 
                    </h3>
-                   <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-4">
-                     Leading the way <br/>
-                     in <span className="text-green-900">Medical Excellence</span>
-                   </h1>
+                  <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-normal mb-4">
+                       Leading the way <br/>
+                        in <span className="text-green-900 leading-normal">Medical Excellence</span>
+                  </h1>
                    
                    {/* Services Button */}
                    <div className="mt-6 flex justify-center md:justify-start">
