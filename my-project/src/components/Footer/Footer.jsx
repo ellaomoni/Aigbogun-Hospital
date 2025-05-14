@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import Logo from '../../assets/logo.png';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +13,13 @@ const Footer = () => {
           {/* Logo and Hospital Name */}
           <div className="flex flex-col items-start">
             <div className="flex items-center mb-4">
+              <Link to="/">
               <img 
                 src= {Logo}
                 alt="Hospital Logo" 
                 className="h-10 w-30 mr-2"
               />
+              </Link>
             </div>
             <p className="text-gray-600 mb-4">
               Providing quality healthcare services.
@@ -41,11 +44,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-green-600 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-green-600">Home</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-green-600">Services</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-green-600">Doctors</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-green-600">Appointments</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-green-600">About Us</a></li>
+              <li className="text-gray-600 hover:text-green-600"><Link to="/">Home</Link></li>
+              <li className="text-gray-600 hover:text-green-600"><Link to="/about">About us</Link></li>
+              <li className="text-gray-600 hover:text-green-600"><Link to="/gallery">Gallery</Link></li>
+              <li className="text-gray-600 hover:text-green-600"><Link to="/department">Departments</Link></li>
+              <li className="text-gray-600 hover:text-green-600"><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
